@@ -12,8 +12,7 @@ const config = {
      * The "contact us" and "commands" are prebuild pages that still **MUST** be defined here,
      * or they will not show
      */
-    pages:  [
-        {
+    pages: [{
             enabled: true,
             title: `Home`,
             contents: `This is some custom HTML. You can do anything here`
@@ -30,13 +29,13 @@ const config = {
         },
         {
             enabled: true,
-            title: `Another Info Page`,
-            contents: `See how magical this is`
+            title: `Supporter`,
+            contents: `{supporter}`
         },
         {
             enabled: true,
-            title: `Add more pages!`,
-            contents: `It's super easy to do. `
+            title: `Staff`,
+            contents: `{staff}`
         }
     ],
 
@@ -52,11 +51,9 @@ const config = {
     /**
      * Commands
      */
-    commands: [
-        {
+    commands: [{
             name: 'General',
-            items: [
-                {
+            items: [{
                     command: '/help',
                     info: 'Show this popup'
                 },
@@ -106,8 +103,7 @@ const config = {
         },
         {
             name: 'Garment',
-            items: [
-                {
+            items: [{
                     command: '/helmet',
                     args: '{0 - remove | 1 - put on}',
                     info: 'Toggle helmet/hat on/off'
@@ -130,18 +126,15 @@ const config = {
         },
         {
             name: 'Vehicles',
-            items: [
-                {
-                    command: '/cardoor',
-                    args: '{open or close} {number (0-5)}',
-                    info: 'Open/Close individual doors'
-                },
-            ],
+            items: [{
+                command: '/cardoor',
+                args: '{open or close} {number (0-5)}',
+                info: 'Open/Close individual doors'
+            }, ],
         },
         {
             name: 'Racing',
-            items: [
-                {
+            items: [{
                     command: '/racequit',
                     info: 'Abandon current race'
                 },
@@ -154,8 +147,7 @@ const config = {
         },
         {
             name: 'Jobs',
-            items: [
-                {
+            items: [{
                     command: '/cam',
                     info: 'Toggle camera. Must be signed in News job'
                 },
@@ -178,11 +170,9 @@ const config = {
     /**
      * Hotkeys
      */
-    hotkeys: [
-        {
+    hotkeys: [{
             name: 'General',
-            items: [
-                {
+            items: [{
                     pressKey: 'I',
                     info: 'Open the inventory'
                 },
@@ -215,8 +205,7 @@ const config = {
         },
         {
             name: 'Vehicle',
-            items: [
-                {
+            items: [{
                     pressKey: 'G',
                     info: 'Start / Stop the engine'
                 },
@@ -232,8 +221,7 @@ const config = {
         },
         {
             name: 'Voice',
-            items: [
-                {
+            items: [{
                     pressKey: '~',
                     info: 'Change voice range'
                 },
@@ -250,13 +238,11 @@ const config = {
         },
         {
             name: 'Movement',
-            items: [
-                {
-                    pressKey: 'Shift + Q',
-                    info: 'Tackle (fall over)',
-                    special: 'Must be running before pressing keys'
-                },
-            ]
+            items: [{
+                pressKey: 'Shift + Q',
+                info: 'Tackle (fall over)',
+                special: 'Must be running before pressing keys'
+            }, ]
         },
     ],
 
